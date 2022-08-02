@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
 
     private void ChangeDirection()
     {
-        Vector3 movDirection = new Vector3(rawInput.x, 0, rawInput.y);
+        Vector3 movDirection = new Vector3(rawInput.x, 0, 1);
         if (movDirection != Vector3.zero)
         {
             Quaternion toRotation = Quaternion.LookRotation(movDirection, Vector3.up);
